@@ -1,0 +1,76 @@
+#The following libraries and modules are required. 
+
+#Requests - HTTP library
+#https://requests.readthedocs.io/en/latest/
+import requests 
+
+#JSON encoder and decode - JSON encoder/decoder
+#https://docs.python.org/3/library/json.html
+import json
+
+#BeautifulSoup - HTML parser 
+#https://beautiful-soup-4.readthedocs.io/en/latest/#porting-code-to-bs4
+from bs4 import BeautifulSoup
+
+#Pandas - data structure library 
+#https://pandas.pydata.org/docs/
+import pandas as pd
+
+#re - module to provide regular expression operations 
+#https://docs.python.org/3/library/re.html#
+import re 
+
+#NumPy - for handling multidimensional arrays
+#https://numpy.org/
+import numpy as np
+
+#math - module to access mathematical functions
+#https://docs.python.org/3/library/math.html
+import math
+
+#matplotlib / matplotlib.pyplot - mathematical visualisation 
+#https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+import matplotlib.pyplot as plt
+%matplotlib inline #to output plots in python shell
+
+#seaborn - library for statistical graphics
+#https://seaborn.pydata.org/tutorial/introduction 
+import seaborn as sns
+
+#correlation calculation
+#SciPy - collection of algorithms for scientific calculations 
+from scipy import stats
+
+#SciPy modules for correlation calculations
+from scipy.stats import kendalltau
+from scipy.stats import pearsonr
+from scipy.stats import spearmanr
+
+#NLTK - natural language toolkit
+#https://www.nltk.org/
+import nltk
+#read corpus files 
+from nltk.corpus import webtext
+#frequency distributions of words 
+from nltk.probability import FreqDist
+#word tokenisation
+from nltk import sent_tokenize, word_tokenize
+
+#WordCloud - to create word clouds with removed stop words
+from wordcloud import WordCloud, STOPWORDS
+
+#NLTK downloader module
+nltk.download('punkt')
+nltk.download('wordnet')
+
+
+#If needed, here are the pip install commands:
+pip install requests
+pip install beautifulsoup4
+pip install pandas
+pip install numpy
+pip install matplotlib
+pip install seaborn
+pip install scipy
+pip install nltk
+pip install wordcloud
